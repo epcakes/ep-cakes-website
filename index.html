@@ -6,7 +6,7 @@
  async function render(){
   try{var products=await loadJSON('/data/products.json');if(Array.isArray(products)){
    var grid=document.querySelector('#collection .grid');var fragment=document.createDocumentFragment();
-   products.forEach(function(p){if(!p||!p.title)return;var a=el('article','card'),im=el('img'),d=el('div');im.src=safeImage(p.image)||'/logo.png';im.alt=p.alt||p.title;im.loading='lazy';d.append(el('h3','',p.title),el('p','',p.description||''),el('span','price',p.price||'Price on request'));a.append(im,d);fragment.append(a)});
+   products.forEach(function(p){if(!p||!(p.title||p.name))return;var a=el('article','card'),im=el('img'),d=el('div');im.src=safeImage(p.image)||'/logo.png';im.alt=p.alt||p.title||p.name;im.loading='lazy';d.append(el('h3','',p.title||p.name),el('p','',p.description||''),el('span','price',p.price||'Price on request'));a.append(im,d);fragment.append(a)});
    grid.replaceChildren(fragment)
   }}catch(e){console.warn('Showing original products:',e)}
   try{var gallery=await loadJSON('/data/gallery.json');if(Array.isArray(gallery)){
