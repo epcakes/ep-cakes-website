@@ -78,5 +78,19 @@
   {
     "image": "/images/chocolate-strawberry.jpg",
     "alt": "EP CAKES chocolate strawberry"
-  }
+  },
+
+{
+  "image": "/images/coffee-truffles.jpg",
+  "alt": "EP CAKES Coffee Bean Mousse",
+  "category": "Individual Desserts"
+},{
+  "image": "/images/heart-dessert-cups.jpg",
+  "alt": "EP CAKES Triple Chocolate Heart Dessert",
+  "category": "Individual Desserts"
+},{
+  "image": "/images/chocolate-cup-tiramisu.jpg",
+  "alt": "EP CAKES Individual Tiramisu Dessert",
+  "category": "Individual Desserts"
+}
 ]
