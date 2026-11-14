@@ -31,12 +31,12 @@
  document.querySelectorAll('#gallery .gallery img').forEach(function(im){im.dataset.category=classifyGallery(im.getAttribute('src')||'',im.alt||'','')});
  setupGalleryFilters();
  async function render(){
-  try{var products=await loadJSON('/data/products.json');if(Array.isArray(products)){
+  try{var products=await loadJSON('data/products.json');if(Array.isArray(products)){
    var grid=document.querySelector('#collection .grid');var fragment=document.createDocumentFragment();
    products.forEach(function(p){if(!p||!(p.title||p.name))return;var a=el('article','card'),im=el('img'),d=el('div');im.src=safeImage(p.image)||'/logo.png';im.alt=p.alt||p.title||p.name;im.loading='lazy';d.append(el('h3','',p.title||p.name),el('p','',p.description||''),el('span','price',p.price||'Price on request'));a.append(im,d);fragment.append(a)});
    grid.replaceChildren(fragment)
   }}catch(e){console.warn('Showing original products:',e)}
-  try{var gallery=await loadJSON('/data/gallery.json');if(Array.isArray(gallery)){
+  try{var gallery=await loadJSON('data/gallery.json');if(Array.isArray(gallery)){
    var target=document.querySelector('#gallery .gallery'),fragment=document.createDocumentFragment();
    gallery.forEach(function(item){if(!item||!safeImage(item.image))return;var im=el('img');im.src=safeImage(item.image);im.alt=item.alt||'EP CAKES dessert';im.loading='lazy';im.dataset.category=classifyGallery(im.src,im.alt,item.category);fragment.append(im)});target.replaceChildren(fragment);setupGalleryFilters()
   }}catch(e){console.warn('Showing original gallery:',e)}
