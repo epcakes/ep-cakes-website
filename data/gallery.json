@@ -92,5 +92,24 @@
   "image": "/images/chocolate-cup-tiramisu.png",
   "alt": "EP CAKES Individual Tiramisu Dessert",
   "category": "Individual Desserts"
+},{
+  "image": "/images/chocolate-babka.jpg",
+  "alt": "EP CAKES Chocolate Babka",
+  "category": "Chocolate Babka"
+},
+{
+  "image": "/images/cookies.jpg",
+  "alt": "EP CAKES Homemade Cookies",
+  "category": "Sweet Treats"
+},
+{
+  "image": "/images/fruit-tartlets-box.jpg",
+  "alt": "EP CAKES Fresh Fruit Tartlets",
+  "category": "Sweet Treats"
+},
+{
+  "image": "/images/savory-pastries.jpg",
+  "alt": "EP CAKES Savoury Pastries",
+  "category": "Savoury Treats"
 }
 ]
