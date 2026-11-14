@@ -11,7 +11,7 @@
  async function loadJSON(path){var r=await fetch(path,{cache:'no-cache'});if(!r.ok)throw Error('Could not load '+path);return r.json()}
 
  function classifyGallery(src,alt,explicit){
-  var allowed=['cakes','individual','chocolate','fruit'];
+  var allowed=['cakes','individual','chocolate','fruit','chocolate babka','sweet treats','savoury treats'];
   if(typeof explicit==='string'&&allowed.includes(explicit.toLowerCase()))return explicit.toLowerCase();
   var t=(src+' '+alt).toLowerCase();
   if(/truffle|coffee.bean|gift.box|chocolate.strawberry|chocolate.fruit|chocolate.slices|coffee.pastr|sweet.treat/.test(t))return 'chocolate';
@@ -23,7 +23,7 @@
   var section=document.getElementById('gallery'),gallery=section&&section.querySelector('.gallery');if(!gallery)return;
   var buttons=section.querySelector('.gallery-filters');
   if(!buttons){buttons=el('div','gallery-filters');buttons.setAttribute('role','group');buttons.setAttribute('aria-label','Filter gallery by category');gallery.parentNode.insertBefore(buttons,gallery)}
-  var options=[['all','All Photos'],['cakes','Celebration Cakes'],['individual','Individual Desserts'],['chocolate','Chocolate & Truffles'],['fruit','Fruit Mousse Desserts']];
+  var options=[['all','All Photos'],['cakes','Celebration Cakes'],['individual','Individual Desserts'],['chocolate','Chocolate & Truffles'],['fruit','Fruit Mousse Desserts'],['chocolate babka','Chocolate Babka'],['sweet treats','Sweet Treats'],['savoury treats','Savoury Treats']];
   buttons.replaceChildren();
   var message=section.querySelector('.gallery-empty');if(!message){message=el('p','gallery-empty','No photos in this category yet.');message.hidden=true;gallery.insertAdjacentElement('afterend',message)}
   options.forEach(function(pair){var b=el('button','gallery-filter',pair[1]);b.type='button';b.setAttribute('aria-pressed',pair[0]==='all'?'true':'false');b.addEventListener('click',function(){buttons.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});var count=0;gallery.querySelectorAll('img').forEach(function(im){var category=im.dataset.category||classifyGallery(im.getAttribute('src')||'',im.alt||'','');im.dataset.category=category;im.hidden=pair[0]!=='all'&&category!==pair[0];if(!im.hidden)count++});message.hidden=count>0});buttons.append(b)})
