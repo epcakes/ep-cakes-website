@@ -1,13 +1,20 @@
 [
   {
+    "name": "Bouquet Celebration Cake",
+    "description": "Elegant handcrafted celebration cake inspired by a beautiful floral bouquet. Made to order for special occasions.",
+    "price": "Price on Request",
+    "image": "images/bouquet-cake.jpg"
+  },
+  {
     "name": "Ferrero Rocher Cake",
-    "description": "Rich chocolate cake with a delicious Ferrero Rocher-inspired filling, chocolate and hazelnut flavours. Perfect for special occasions. Decorations can be personalised.,
+    "description": "Rich chocolate cake with a Ferrero Rocher-inspired filling and chocolate and hazelnut flavours. Decorations can be personalised.",
     "price": "Price on Request",
     "image": "images/whisky-cake.jpg"
-  },{
-  "name": "Green Celebration Cake",
-  "description": "Elegant handcrafted celebration cake with a beautiful green finish, made to order for your special occasion.",
-  "price": "Price on Request",
-  "image": "images/file_00000000d7a88210afdf5d3575c759bd.png
+  },
+  {
+    "name": "Green Celebration Cake",
+    "description": "Elegant handcrafted celebration cake with a beautiful green finish, made to order for your special occasion.",
+    "price": "Price on Request",
+    "image": "images/green-celebration-cake.jpg"
   }
 ]
