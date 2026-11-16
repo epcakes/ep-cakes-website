@@ -79,45 +79,49 @@
     "image": "/images/chocolate-strawberry.jpg",
     "alt": "EP CAKES chocolate strawberry"
   },
-
-{
-  "image": "/images/coffee-truffles.jpg",
-  "alt": "EP CAKES Coffee Bean Mousse",
-  "category": "Individual Desserts"
-},{
-  "image": "/images/heart-dessert-cups.jpg",
-  "alt": "EP CAKES Triple Chocolate Heart Dessert",
-  "category": "Individual Desserts"
-},{
-  "image": "/images/chocolate-cup-tiramisu.png",
-  "alt": "EP CAKES Individual Tiramisu Dessert",
-  "category": "Individual Desserts"
-},{
-  "image": "/images/chocolate-babka.jpg",
-  "alt": "EP CAKES Chocolate Babka",
-  "category": "Chocolate Babka"
-},
-{
-  "image": "/images/cookies.jpg",
-  "alt": "EP CAKES Homemade Cookies",
-  "category": "Sweet Treats"
-},
-{
-  "image": "/images/fruit-tartlets-box.jpg",
-  "alt": "EP CAKES Fresh Fruit Tartlets",
-  "category": "Sweet Treats"
-},
-{
-  "image": "/images/savory-pastries.jpg",
-  "alt": "EP CAKES Savoury Pastries",
-  "category": "Savoury Treats"
-},{
-  "image": "/images/green-celebration-cake.jpg",
-  "alt": "EP CAKES Green Celebration Cake",
-  "category": "Celebration Cakes"
-}, {
-  "image": "/images/chocolate-fruit-mini-new.png",
-  "alt": "Handcrafted Chocolate and Fresh Fruit Mini Desserts",
-  "category": "Individual Desserts"
-}
+  {
+    "image": "/images/coffee-bean-mousse-new.png",
+    "alt": "EP CAKES Coffee Bean Mousse",
+    "category": "Luxury Individual Cakes"
+  },
+  {
+    "image": "/images/heart-dessert-cups.jpg",
+    "alt": "EP CAKES Triple Chocolate Heart Dessert",
+    "category": "Luxury Individual Cakes"
+  },
+  {
+    "image": "/images/chocolate-cup-tiramisu.png",
+    "alt": "EP CAKES Individual Tiramisu Dessert",
+    "category": "Luxury Individual Cakes"
+  },
+  {
+    "image": "/images/chocolate-babka.jpg",
+    "alt": "EP CAKES Chocolate Babka",
+    "category": "Babka"
+  },
+  {
+    "image": "/images/cookies.jpg",
+    "alt": "EP CAKES Homemade Cookies",
+    "category": "Sweet Treats"
+  },
+  {
+    "image": "/images/fruit-tartlets-box.jpg",
+    "alt": "EP CAKES Fresh Fruit Tartlets",
+    "category": "Sweet Treats"
+  },
+  {
+    "image": "/images/savory-pastries.jpg",
+    "alt": "EP CAKES Savoury Pastries",
+    "category": "Savoury"
+  },
+  {
+    "image": "/images/chocolate-fruit-mini-new.png",
+    "alt": "Handcrafted Chocolate and Fresh Fruit Mini Desserts",
+    "category": "Luxury Individual Cakes"
+  },
+  {
+    "image": "/images/cherry-layered-cake.png",
+    "alt": "Cherry layered celebration cake",
+    "category": "Celebration Cakes"
+  }
 ]
